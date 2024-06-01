@@ -90,7 +90,10 @@ export default function UploadPDFCard() {
                     }
                     
                 </div>
-                <button className="bg-[#6c757d] text-white py-2 px-4 rounded-[8px]">Analyse Bill</button>
+                <button       
+                className={`py-2 px-4 rounded-[8px] ${fileUploaded ? 'bg-[#adb5bd] hover:bg-[#9fa0a1] cursor-pointer' : 'bg-[#adb5bd] opacity-40 cursor-not-allowed'}`}
+                disabled={!fileUploaded}>
+                    Analyse Bill</button>
                 <div className="flex items-center">
                     <i className="fas fa-list text-[#6c757d] mr-2"></i>
                 </div>
