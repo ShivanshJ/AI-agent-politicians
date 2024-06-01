@@ -13,11 +13,6 @@ function App() {
         <Route exact path="/temp" element={<SignIn/>}/>
       </Routes>
     </Router>
-    // <div className="App">
-    //   <h1 className="text-3xl">
-    //     <UploadPDFCard />
-    //   </h1>
-    // </div>
   );
 }
 
